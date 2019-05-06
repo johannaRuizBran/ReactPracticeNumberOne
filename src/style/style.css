@@ -6,35 +6,32 @@
 
 .title {
     color: white;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 1.3em;
+    padding: 1.3em;
     text-align: center;   
 }
 
-.sidebarContent {
-    position: fixed;
-}
-
 .sidebar {
+    transition: all 3s ease-in;
     position: fixed;
-    width: 200px;
+    display: inline-block;
+    width: 20%;
     height: 100%;
     background: #151719;    
-    left: 0;  
-
 }
 
-.sidebar ul li {
-    color: rgb(230, 230, 230, 0.9);
-    list-style: none;
-    padding: 15px 10px;
-    border-bottom: 1px solid rgb(100, 100, 100, 0.3);    
+.sidebar a {
+    text-decoration: none;   
+    color: rgb(230, 230, 230, 0.9);    
+    padding: 1em 1.5em;   
+    display: block;     
+    border-bottom: 1px solid rgb(100, 100, 100, 0.3);  
 }
 
 .toggle-btn {
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 1em;
+    top: 1em;
 }
 
 .toggle-btn span {
@@ -45,8 +42,27 @@
     margin: 5px 0px;
 }
 
-li:hover {
+.content {
+    margin: 5% 5% 5% 25%;
+}
+
+.character {
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*
+.active {
     outline:solid 1px #DACEDA;
+}*/
+
+
+a:hover {
+    font-weight: bold;
+    
 }
 
 .header-element {
@@ -67,8 +83,8 @@ li:hover {
 }
 
 .footer p {
-    font-size: 12px;
+    font-size: .8em;
     position: absolute;    
     left: 0;
-    padding: 10px;
+    padding: 1em;
 }

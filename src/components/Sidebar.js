@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
+import { NavLink } from "react-router-dom";
 import '../style/style.css';
 
 class Sidebar extends Component {            
     render(){                
-        return (           
+        return (
             <div className='sidebar'>                    
-                <ul>
-                    <li>Practice #1</li>
-                    <li>Practice #2</li>
-                    <li>Practice #3</li>
-                </ul>         
+                <NavLink to="/" exact>Practice #1</NavLink>
+                <NavLink to="/practice2" exact>Practice #2</NavLink>         
             </div>                    
         );
     }
