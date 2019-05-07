@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/style.css';
 
-const Header = (props) => 
+const header = (props) => 
 
 <div className="header-element">
     <div className="toggle-btn" onClick={props.sideBarHandler}>
@@ -12,4 +12,4 @@ const Header = (props) =>
     <p className="title">My first practice in React</p>
 </div>
 
-export default Header;
+export default header;
